@@ -1,0 +1,53 @@
+.container {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: rgb(20, 111, 176);
+    padding: 20px;
+  }
+  
+  h1 {
+    color: hsl(0, 0%, 100%);
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .cell {
+    background-color: black;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 80px;
+  }
+  
+  button {
+    margin-bottom: 10px;
+  }
+  
+  #result {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 75;
+  }
+
+  .backvideo{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  @media (min-aspect-ratio: 16/9){
+    .backvideo{
+      width: 100%;
+      height: auto;
+    }
+  }
